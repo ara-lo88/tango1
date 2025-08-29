@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="titulo">UMMA PETSHOP</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #de1212; 
+      text-align: center;
+    }
+    .dos{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    .titulo{
+        color: rgb(9, 3, 9);
+    }
+
+    header {
+      padding: 40px 20px;
+      background-color: #914343;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .producto {
+      background: #e25c5c;
+      border: 2px solid rgb(8, 7, 8);
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+   
+
+    .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e50d0d; /* Color rosa */
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>UMMA PETSHOP 🐾</h1>
+    <p class="dos">CONTACTO: 1126749527</p>
+  </header>
+
+  <section class="productos">
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="./img/1.png" alt="petshop">
+      <h3>DNI perruno</h3>
+      <p>$9000</p>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="./img/2.png" alt="petshop">
+      <h3>Morrales Adaptados</h3>
+      <p>$20.000</p>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <img src="./img/3.png" alt="petshop">
+      <h3>Chapitas personalizadas</h3>
+      <p>$8000</p>
+    </div>
+
+     <div class="producto">
+      <img src="./img/4.png" alt="petshop">
+      <h3>Camiseta ARG</h3>
+      <p>$12.000</p>
+    </div>
+    <div class="producto">
+      <img src="./img/5.png" alt="petshop">
+      <h3>Peine dos usos</h3>
+      <p>$8.000</p>
+      </div>
+      <div class="producto">
+      <img src="./img/6.png" alt="petshop">
+      <h3>Campera rock</h3>
+      <p>$25.000</p>
+      </div>
+       <div class="producto">
+      <img src="./img/4.png" alt="petshop">
+      <h3>Manta polar soft</h3>
+      <p>$8.000</p>
+    </div>
+     <div class="producto">
+      <img src="./img/8.jpeg" alt="petshop">
+      <h3>Comedero bebederos de Colores </h3>
+      <p>$6300</p>
+    </div>
+     <div class="producto">
+      <img src="./img/10.jpeg" alt="petshop">
+      <h3>Cinturones seguridad para el auto</h3>
+      <p>$6.300</p>
+    </div>
+     <div class="producto">
+      <img src="./img/9.jpeg" alt="petshop">
+      <h3>Collar clásico</h3>
+      <p>$3.800</p>
+    </div>
+  </section>
+
+  <!-- Botón flotante WhatsApp -->
+<a href="https://wa.me/5491126749527" class="whatsapp-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
